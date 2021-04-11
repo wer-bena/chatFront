@@ -32,5 +32,8 @@ export class ApihttpService {
   isAuthencticated(): boolean {
     return localStorage.getItem('authToken') !== null;
   }
+  logout(): void {
+    localStorage.clear();
+  }
 
 }

@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { MessageComponent } from './message/message.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MessageComponent } from './message/message.component';
     MainPageComponent,
     RegisterComponent,
     LoginComponent,
-    MessageComponent
+    MessageComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
