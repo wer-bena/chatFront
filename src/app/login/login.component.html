@@ -5,14 +5,14 @@
     <div class="uk-form-stacked">
       <div class="uk-margin">
         <label>Nazwa</label>
-        <input class="uk-input uk-border-rounded" type="text">
+        <input [(ngModel)]="credentials.username" class="uk-input uk-border-rounded" type="text">
       </div>
       <div class="uk-margin">
         <label>Hasło</label>
-        <input class="uk-input uk-border-rounded" type="password">
+        <input [(ngModel)]="credentials.password" class="uk-input uk-border-rounded" type="password">
       </div>
       <div class="uk-margin">
-        <button class="uk-button uk-button-primary uk-border-rounded uk-align-right uk-margin-remove-bottom">Zaloguj</button>
+        <button (click)="userLogin()" class="uk-button uk-button-primary uk-border-rounded uk-align-right uk-margin-remove-bottom">Zaloguj</button>
       </div>
     </div>
   </div>
