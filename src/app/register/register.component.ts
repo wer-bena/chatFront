@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
 
   usernameSizeError = false;
   usernameExistsError = false;
-  passwordSizeError= false;
+  passwordSizeError = false;
 
   constructor(private apiHttp: ApihttpService, private router: Router) { }
 

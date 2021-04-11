@@ -6,10 +6,13 @@
       <div class="uk-margin">
         <label>Nazwa</label>
         <input [(ngModel)]="credentials.username" class="uk-input uk-border-rounded" type="text">
+        <span *ngIf="usernameSizeError" class="uk-text-small uk-text-danger">Nazwa użytkownika powinna mieć od 3 do 16 znaków</span>
       </div>
       <div class="uk-margin">
         <label>Hasło</label>
         <input [(ngModel)]="credentials.password" class="uk-input uk-border-rounded" type="password">
+        <span *ngIf="passwordSizeError" class="uk-text-small uk-text-danger">Hasło powinno mieć od 8 do 30 znaków</span>
+        <span *ngIf="wrongCredentials" class="uk-text-small uk-text-danger">Niepoprawna nazwa użytkownika lub hasło</span>
       </div>
       <div class="uk-margin">
         <button (click)="userLogin()" class="uk-button uk-button-primary uk-border-rounded uk-align-right uk-margin-remove-bottom">Zaloguj</button>
