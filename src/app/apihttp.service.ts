@@ -29,4 +29,8 @@ export class ApihttpService {
     localStorage.setItem('authToken', r.authToken);
   }
 
+  isAuthencticated(): boolean {
+    return localStorage.getItem('authToken') !== null;
+  }
+
 }
