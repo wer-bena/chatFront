@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 userLogin(): void {
   this.cleanForm();
   this.apiHttp.userLogin(this.credentials).subscribe(
-    () => this.router.navigate(['']),
+    () => this.router.navigate(['message']),
     e => {
       if (e.status === 403) {
         this.wrongCredentials = true;
